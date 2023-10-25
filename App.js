@@ -7,13 +7,16 @@
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {SafeAreaView, useColorScheme} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
   const ToDoStack = createNativeStackNavigator();
 
-  return <SafeAreaView></SafeAreaView>;
+  return (
+    <SafeAreaView>
+      <Text>Test</Text>
+    </SafeAreaView>
+  );
 }
 
 export default App;
