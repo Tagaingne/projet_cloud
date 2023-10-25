@@ -9,6 +9,10 @@ import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 
+ @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
   /**
    * Returns the name of the main component registered from JavaScript. This is
    * used to schedule
@@ -18,6 +22,8 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "cours";
   }
+
+  
 
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util
@@ -35,12 +41,4 @@ public class MainActivity extends ReactActivity {
         DefaultNewArchitectureEntryPoint.getFabricEnabled());
   }
 
-  public class MainActivity extends ReactActivity {
-    // ...
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-      super.onCreate(null);
-    }
-    // ...
-  }
 }
