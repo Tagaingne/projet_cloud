@@ -13,7 +13,7 @@ const LoginScreen = ({navigation}) => {
       // Remplacez par l'URL de votre backend
       console.log('ici');
       const response = await axios.post(
-        'http://192.168.43.20/tp_final/login.php',
+        'http://172.20.10.2/tp_final/login.php',
         {
           username,
           password,
@@ -36,7 +36,7 @@ const LoginScreen = ({navigation}) => {
   const handleSignup = async () => {
     try {
       const response = await axios.post(
-        'http://192.168.43.20/tp_final/signup.php',
+        'http://172.20.10.2/tp_final/signup.php',
         {username, password},
       );
       if (response.data.success) {
